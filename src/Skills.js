@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 const SkillGroup = ({ title, skills }) => (
   <div className="mb-6">
     {/* Skill header */}
-    <div className="col-span-full mb-2">
+    <div className="col-span-full mb-2 py-2">
       <h3 className="text-mainTitle font-bold uppercase mb-2 relative w-fit ">
         {title}:
         <motion.span
@@ -43,7 +43,7 @@ export default function Skills() {
   return (
     <section id="skills" className="section-style pb-[20px] border-divider">
       <HeroTitle state={true} title={`<SKILLS>`} />
-      <div className="px-5 max-md:px-2 py-4 border-l border-l-sectionTitle">
+      <div className="px-5 max-md:px-2 py-4 border-l-4 border-l-sectionTitle">
         <AnimatedSection delay={0.1}>
           <div className="relative">
             <h3 className="col-span-full font-medium small-body mb-4 text-text">

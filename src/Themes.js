@@ -28,7 +28,7 @@ export default function Themes() {
       <button
         className={`cursor-pointer relative group sm:p-2 p-1.5 inline-flex items-center rounded-full shadow-[0_10px_24px_var(--shadow)] ${
           theme === "light"
-            ? "bg-gradient-to-r from-[#616161] to-[#424242]"
+            ? "bg-gradient-to-r from-[#222222] to-[#111]"
             : "bg-gradient-to-r from-[#bdbdbd]  to-[#9e9e9e]"
         }`}
         onClick={() => handleTheme("basic")}
@@ -48,8 +48,8 @@ export default function Themes() {
       <button
         className={`cursor-pointer relative group inline-flex items-center sm:p-2 p-1.5 rounded-xl shadow-[0_10px_24px_var(--shadow)] ${
           theme === "color-light"
-            ? "bg-gradient-to-r from-[#1a1a36] to-[#2e2e54]"
-            : "bg-gradient-to-r from-[#ff7d00] to-[#ffd1a3] "
+            ? "bg-gradient-to-r from-[#1a1a1a] to-[#39ff14]"
+            : "bg-gradient-to-r from-[#c8e6c9] to-[#a5d6a7] "
         }`}
         onClick={() => handleTheme("colored")}
       >

@@ -57,7 +57,12 @@ import LeonLarge from "./assets/images/leonagency.webp";
 import LeonPh from "./assets/images/leonagency_ph.webp";
 import GPTLarge from "./assets/images/GPT_Ph.webp";
 import GPTPh from "./assets/images/GPT_Large.webp";
-import { title } from "framer-motion/client";
+import QuizLarge from "./assets/images/Country_Quiz_Large.webp";
+import QuizPh from "./assets/images/Country_Quiz_Ph.webp";
+import PropertyLarge from "./assets/images/Property_Large.webp";
+import PropertyPh from "./assets/images/Property_Small.webp";
+import RecipesLarge from "./assets/images/Recipes_Large.webp";
+import RecipesPh from "./assets/images/Recipes_Small.jpg";
 
 export const aboutInfo = [
   {
@@ -304,5 +309,59 @@ export const projects = [
     tools: ["HTML5", "CSS3", "Responsive Design"],
     link: "https://mohamedezz524.github.io/First-project/",
     github: "https://github.com/MohamedEzz524/First-project",
+  },
+];
+
+export const recentWork = [
+  {
+    id: "rec1",
+    title: "Recipes App",
+    large: RecipesLarge,
+    small: RecipesPh,
+    desc: "A recipe browser built with dynamic category filters, keyword search, and sorting options by name or freshness. Features detailed views with YouTube integration, copy-to-clipboard functionality, and a favorites system stored locally.",
+    tools: [
+      "React",
+      "REST API",
+      "Dynamic Filters",
+      "Search & Sort",
+      "Local Storage",
+      "Responsive UI",
+    ],
+    link: "https://mohamedezz524.github.io/Chefs_academy/",
+    github: "https://github.com/MohamedEzz524/Chefs_academy",
+  },
+  {
+    id: "rec2",
+    title: "Country Quiz",
+    large: QuizLarge,
+    small: QuizPh,
+    desc: "An interactive quiz app using real-time country data. Users navigate through questions, submit answers only after completion, and receive instant feedback with score and corrections.",
+    tools: [
+      "React",
+      "API Integration",
+      "Quiz Logic",
+      "Answer Reveal",
+      "User Flow Control",
+      "Local Storage",
+    ],
+    link: "https://mohamedezz524.github.io/Country_quiz/",
+    github: "https://github.com/MohamedEzz524/Country_quiz",
+  },
+  {
+    id: "rec3",
+    title: "Property Listing",
+    large: PropertyLarge,
+    small: PropertyPh,
+    desc: "A responsive real estate listing platform featuring property filtering by location, superhost status, and property size. Users can explore, preview, and save favorite listings using persistent local storage.",
+    tools: [
+      "React",
+      "REST API",
+      "Multi-Criteria Filtering",
+      "Favorites System",
+      "Local Storage",
+      "Responsive Layout",
+    ],
+    link: "https://mohamedezz524.github.io/Property_listing/",
+    github: "https://github.com/MohamedEzz524/Property_listing",
   },
 ];
