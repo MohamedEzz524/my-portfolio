@@ -16,6 +16,7 @@ export default function Projects() {
         {recentWork.map((p, i) => (
           <ProjectCard key={p.id} p={p} i={i} />
         ))}
+        <h3 className="card-title">My Projects</h3>
         {projects.map((p, i) => (
           <ProjectCard key={p.id} p={p} i={i} />
         ))}
