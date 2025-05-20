@@ -1,0 +1,43 @@
+{
+  "files": {
+    "main.css": "/My-portfolio/static/css/main.21bbe6a8.css",
+    "main.js": "/My-portfolio/static/js/main.c3c4e8b2.js",
+    "static/media/leonagency.webp": "/My-portfolio/static/media/leonagency.ed97350f2b6df61700c6.webp",
+    "static/media/Bakeora_Large.webp": "/My-portfolio/static/media/Bakeora_Large.b9946c6a81c68df9b1df.webp",
+    "static/media/leonagency_ph.webp": "/My-portfolio/static/media/leonagency_ph.ed75808362b830b3898b.webp",
+    "static/media/kasper.webp": "/My-portfolio/static/media/kasper.6067344e47567216f0d9.webp",
+    "static/media/SpecialDesign.webp": "/My-portfolio/static/media/SpecialDesign.8b8b31a65c7e0e1a529d.webp",
+    "static/media/Bakeora_Ph.webp": "/My-portfolio/static/media/Bakeora_Ph.7248439612f4f3257618.webp",
+    "static/media/GPT_Ph.webp": "/My-portfolio/static/media/GPT_Ph.7db58e765453c7c6f1b9.webp",
+    "static/media/SpaceGrotesk-Light.ttf": "/My-portfolio/static/media/SpaceGrotesk-Light.77fdecb3422fbe54ed88.ttf",
+    "static/media/SpaceGrotesk-Medium.ttf": "/My-portfolio/static/media/SpaceGrotesk-Medium.11c47748414ab8a89db0.ttf",
+    "static/media/SpaceGrotesk-Regular.ttf": "/My-portfolio/static/media/SpaceGrotesk-Regular.c092257afdb650be08eb.ttf",
+    "static/media/SpaceGrotesk-Bold.ttf": "/My-portfolio/static/media/SpaceGrotesk-Bold.0f25a4444d02faac4f60.ttf",
+    "static/media/kasper_ph.webp": "/My-portfolio/static/media/kasper_ph.76d67dc3c4050e1bbcb6.webp",
+    "static/media/GPT_Large.webp": "/My-portfolio/static/media/GPT_Large.76fbd00c5de914caa29c.webp",
+    "static/media/PortfolioV1.webp": "/My-portfolio/static/media/PortfolioV1.9b7db208c851c5f6115c.webp",
+    "static/media/animation.webp": "/My-portfolio/static/media/animation.c1e93c446bf7a0dc6597.webp",
+    "static/media/DMSans-MediumItalic.ttf": "/My-portfolio/static/media/DMSans-MediumItalic.b717d7fe5a14690faf30.ttf",
+    "static/media/DMSans-Medium.ttf": "/My-portfolio/static/media/DMSans-Medium.3b0ba81ccb599b9c3f61.ttf",
+    "static/media/DMSans-Regular.ttf": "/My-portfolio/static/media/DMSans-Regular.36401d66ca415d09e170.ttf",
+    "static/media/DMSans-Light.ttf": "/My-portfolio/static/media/DMSans-Light.01a44a42c1b22a037941.ttf",
+    "static/media/DMSans-Bold.ttf": "/My-portfolio/static/media/DMSans-Bold.e604b7aec4c3e2ceb6e3.ttf",
+    "static/media/specialDesign_ph.webp": "/My-portfolio/static/media/specialDesign_ph.bba8fe7658890f637ca1.webp",
+    "static/media/PortfolioTemplateV.webp": "/My-portfolio/static/media/PortfolioTemplateV.5ca218d8ae74c1c8737f.webp",
+    "static/media/ZRevo_ph.webp": "/My-portfolio/static/media/ZRevo_ph.10a0c9496872dfce596a.webp",
+    "static/media/PortfolioV1-ph.webp": "/My-portfolio/static/media/PortfolioV1-ph.6c295fa5b698df124622.webp",
+    "static/media/DevFolio_Ph.webp": "/My-portfolio/static/media/DevFolio_Ph.8eae7eb83a23fac0ce2d.webp",
+    "static/media/animation_ph.webp": "/My-portfolio/static/media/animation_ph.875f82257df447989e49.webp",
+    "static/media/DevFolio_Large.webp": "/My-portfolio/static/media/DevFolio_Large.d351dba8093c8e9e6a76.webp",
+    "static/media/Orbitron-Medium.ttf": "/My-portfolio/static/media/Orbitron-Medium.1a5c8e9651ff9236dea1.ttf",
+    "static/media/Orbitron-Regular.ttf": "/My-portfolio/static/media/Orbitron-Regular.1f498717ba081693370a.ttf",
+    "static/media/Orbitron-Bold.ttf": "/My-portfolio/static/media/Orbitron-Bold.a0309d1fe75d16b6f13a.ttf",
+    "index.html": "/My-portfolio/index.html",
+    "main.21bbe6a8.css.map": "/My-portfolio/static/css/main.21bbe6a8.css.map",
+    "main.c3c4e8b2.js.map": "/My-portfolio/static/js/main.c3c4e8b2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.21bbe6a8.css",
+    "static/js/main.c3c4e8b2.js"
+  ]
+}
