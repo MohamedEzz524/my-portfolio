@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/My-portfolio/static/css/main.d3dff161.css",
-    "main.js": "/My-portfolio/static/js/main.13409e7e.js",
+    "main.css": "/My-portfolio/static/css/main.adec40ca.css",
+    "main.js": "/My-portfolio/static/js/main.1e2faaf4.js",
     "static/media/leonagency.webp": "/My-portfolio/static/media/leonagency.ed97350f2b6df61700c6.webp",
     "static/media/Recipes_Large.webp": "/My-portfolio/static/media/Recipes_Large.e178023935aefada2cbd.webp",
     "static/media/Property_Large.webp": "/My-portfolio/static/media/Property_Large.90b4aed2f639b57834ff.webp",
@@ -39,11 +39,11 @@
     "static/media/Orbitron-Regular.ttf": "/My-portfolio/static/media/Orbitron-Regular.1f498717ba081693370a.ttf",
     "static/media/Orbitron-Bold.ttf": "/My-portfolio/static/media/Orbitron-Bold.a0309d1fe75d16b6f13a.ttf",
     "index.html": "/My-portfolio/index.html",
-    "main.d3dff161.css.map": "/My-portfolio/static/css/main.d3dff161.css.map",
-    "main.13409e7e.js.map": "/My-portfolio/static/js/main.13409e7e.js.map"
+    "main.adec40ca.css.map": "/My-portfolio/static/css/main.adec40ca.css.map",
+    "main.1e2faaf4.js.map": "/My-portfolio/static/js/main.1e2faaf4.js.map"
   },
   "entrypoints": [
-    "static/css/main.d3dff161.css",
-    "static/js/main.13409e7e.js"
+    "static/css/main.adec40ca.css",
+    "static/js/main.1e2faaf4.js"
   ]
 }
