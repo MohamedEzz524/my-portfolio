@@ -10,11 +10,6 @@ module.exports = {
       "2xl": "1536px",
       "3xl": "1920px",
     },
-    //   md: "768px",
-    //   lg: "992px",
-    //   xl: "1200px",
-    //   "2xl": "1400px",
-
     extend: {
       fontFamily: {
         Space: ["var(--font-space)"],
@@ -38,6 +33,7 @@ module.exports = {
         linkHover: "var(--link-hover)",
         linkActive: "var(--link-active)",
         cardBorder: "var(--card-border)",
+        ring: "var(--ring)",
       },
       backgroundImage: {
         heroGradient: "var(--hero-gradient)",

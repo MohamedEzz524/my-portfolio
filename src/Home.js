@@ -48,10 +48,21 @@ export default function Home() {
 
   const cvPath = process.env.PUBLIC_URL + "/documents/MohamedE._CV.pdf";
 
-  useEffect(() => {
-    const handleResize = () => {
-      setIsSmall(window.innerWidth <= 1024);
+  const throttle = (func, delay) => {
+    let lastCall = 0; // Tracks the last execution time
+    return (...args) => {
+      const now = new Date().getTime();
+      if (now - lastCall < delay) return; // Skip if delay hasn't passed
+      lastCall = now;
+      func.apply(this, args);
     };
+  };
+
+  useEffect(() => {
+    const handleResize = throttle(() => {
+      setIsSmall(window.innerWidth <= 1024);
+      console.log("fired");
+    }, 1000);
 
     handleResize();
 
@@ -115,17 +126,23 @@ export default function Home() {
 
         <div className="lg:basis-[45%] lg:sticky lg:top-0 max-h-screen flex flex-col lg:gap-[50px] gap-[20px] px-2 max-lg:mb-[3rem]">
           <div className="">
-            <p className="fadeBottom text-text font-bold text-[clamp(1rem,2vw+.1rem,1.5rem)] ">
+            <p className="text-text font-bold text-[clamp(1rem,2vw+.1rem,1.5rem)] ">
               Hello, I am
             </p>
             <motion.h1
-              initial={{ scale: 0 }}
-              animate={{ scale: 1 }}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 1, delay: 0.5 }}
               className="text-mainTitle font-Space font-extrabold text-[clamp(2rem,3vw+.5rem,3.5rem)]"
             >
-              Mohamed ElSayed
+              <TextAnimation
+                text="Mohamed ElSayed"
+                animation="pulse"
+                type=""
+                delay={0.25}
+              />
             </motion.h1>
-            <p className="fadeTop relative content-center text-primary text-[clamp(1.2rem,2.5vw+.3rem,2rem)] mb-[10px]  font-medium">
+            <p className="relative content-center text-primary text-[clamp(1.2rem,2.5vw+.3rem,2rem)] mb-[10px]  font-medium">
               Creative {text}
               <span
                 className={`${
@@ -143,7 +160,12 @@ export default function Home() {
             </p>
           </div>
           <div className="flex gap-4 relative ">
-            <div className="relative w-[2px] fadeRight h-full bg-linkHover"></div>
+            <motion.div
+              initial={{ opacity: 0, y: -50 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5 }}
+              className="relative w-[2px] h-full bg-linkHover"
+            ></motion.div>
             {!isSmall && (
               <ul className="flex flex-col gap-[20px]">
                 {nav.map((item, i) => (
@@ -184,31 +206,48 @@ export default function Home() {
               </ul>
             )}
           </div>
-          <div className=" flex gap-5 max-sm:gap-3  py-2  small-body">
-            <a
+          <div className=" flex gap-5 max-sm:gap-3 py-2 small-body">
+            <motion.a
+              initial={{ opacity: 0, x: -100 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ type: "spring", stiffness: "300", duration: 1 }}
               href="mailto:moelsayed524@gmail.com?subject=Contact"
               target="_blank"
               rel="noopener noreferrer"
-              className="fadeRight flex items-center px-[min(5%,1rem)] py-2 rounded-lg border border-text text-text font-semibold bg-white/10 backdrop-blur-cardBlur hover:bg-white/20 hover:shadow-[0_0_24px_rgba(255,255,255,0.1)] hover:-translate-y-1 main-trans "
+              className="flex items-center px-[min(5%,1rem)] ring-style py-2 rounded-lg text-text font-semibold bg-white/10 backdrop-blur-cardBlur hover:bg-white/20 hover:shadow-[0_0_24px_rgba(255,255,255,0.1)] hover:-translate-y-1 "
             >
-              <FaBriefcase className="inline-block mr-2 main-trans  text-xl" />
-              <TextAnimation text="Hire Me" type="" />
-            </a>
-            <a
+              <FaBriefcase className="inline-block mr-2 main-trans text-xl" />
+              Hire Me
+            </motion.a>
+            <motion.a
+              initial={{ opacity: 0, x: 100 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{
+                type: "spring",
+                stiffness: "300",
+                duration: 1,
+                damping: 8,
+              }}
               href={cvPath}
               target="_blank"
               rel="noopener noreferrer"
-              className="fadeLeft flex items-center px-[min(5%,1rem)] py-2 rounded-lg bg-buttonBg text-buttonText font-semibold shadow-[0_4px_16px_var(--shadow)] hover:brightness-110 hover:-translate-y-1  main-trans "
+              className="flex items-center px-[min(5%,1rem)] ring-style py-2 rounded-lg bg-buttonBg text-buttonText font-semibold shadow-[0_4px_16px_var(--shadow)]"
             >
               <FaFileDownload className="inline-block mr-2 main-trans " />
               Print CV
-            </a>
+            </motion.a>
           </div>
           {!isSmall && (
-            <AnimatedSection delay={0.8} className="mt-auto">
+            <div className="mt-auto">
               <div className="mt-auto w-full flex items-center gap-3 h-fit flex-wrap  ">
                 {links.map((l, i) => (
-                  <AnimatedSection key={l.id} delay={`${i * 0.4}`}>
+                  <motion.span
+                    initial={{ opacity: 0, y: 50 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: 0.3 * i, ease: "easeOut" }}
+                    key={l.id}
+                  >
                     <a
                       href={l.link}
                       target="_blank"
@@ -218,10 +257,10 @@ export default function Home() {
                       {l.icon}
                       <Label text={l.label} />
                     </a>
-                  </AnimatedSection>
+                  </motion.span>
                 ))}
               </div>
-            </AnimatedSection>
+            </div>
           )}
         </div>
         {/* Fixed section */}
@@ -270,20 +309,14 @@ export default function Home() {
           <AnimatedSection delay={0.2}>
             <About />
           </AnimatedSection>
-          <AnimatedSection>
-            <Skills />
-          </AnimatedSection>
-          <AnimatedSection>
-            <Projects />
-          </AnimatedSection>
+          <Skills />
+          <Projects />
           <AnimatedSection>
             <Contact />
           </AnimatedSection>
-          <AnimatedSection>
-            <footer className="w-full text-center py-6 text-text font-medium border-t border-border bg-footerBg backdrop-blur-sm">
-              &copy; 2025 Handcrafted by me, Made With ❤️
-            </footer>
-          </AnimatedSection>
+          <footer className="w-full text-center py-6 text-text font-medium border-t border-border bg-footerBg backdrop-blur-sm">
+            &copy; 2025 Handcrafted by me, Made With ❤️
+          </footer>
         </div>
         <div className="h-[5rem]"></div>
       </div>

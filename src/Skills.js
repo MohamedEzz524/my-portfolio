@@ -19,7 +19,7 @@ const SkillGroup = ({ title, skills }) => (
     </div>
     <div className="main-trans grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-3 2xl:grid-cols-4 gap-3 max-md:gap-2">
       {skills.map(({ id, icon, name }, i) => (
-        <AnimatedSection key={id} delay={0.1 * i}>
+        <AnimatedSection key={id} delay={0.05 * i}>
           <div
             title={name}
             className="bg-cardBg px-4 py-3 rounded-lg border border-cardBorder shadow-md overflow-hidden flex items-center gap-2 text-[clamp(.5rem,1vw+.25rem,.8rem)] 2xl:text-[.9rem] text-white"
@@ -43,7 +43,7 @@ export default function Skills() {
   return (
     <section id="skills" className="section-style pb-[20px] border-divider">
       <HeroTitle state={true} title={`<SKILLS>`} />
-      <div className="px-5 max-md:px-2 py-4 border-l-4 border-l-sectionTitle">
+      <div className="px-5 max-md:px-2 py-4 shadow-md">
         <AnimatedSection delay={0.1}>
           <div className="relative">
             <h3 className="col-span-full font-medium small-body mb-4 text-text">

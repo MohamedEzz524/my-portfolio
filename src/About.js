@@ -25,22 +25,17 @@ export default function About() {
   return (
     <section id="about" className="section-style pb-[20px] border-divider">
       <HeroTitle setShow={setShowAbout} state={true} title={`<ABOUT ME>`} />
-      <div className="flex flex-col gap-8 px-5 py-4 border-l-4 border-l-sectionTitle max-sm:border-none max-sm:p-0">
+      <div className="flex flex-col gap-8 px-5 py-4 shadow-md max-sm:border-none max-sm:p-0">
         {/* 0 */}
         <AnimatedSection delay={0.2}>
           <div
-            className={`text-text small-body font-medium my-1 relative main-trans  `}
+            className={`text-text small-body font-medium my-1 relative main-trans group bg-white/5 p-4 backdrop-blur-lg `}
           >
             <span
-              className="big-dot max-sm:hidden -translate-x-3.5 cursor-pointer group"
+              className="big-dot max-sm:hidden -translate-x-3.5 cursor-pointer group
+              ring-2 ring-ring ring-offset-2 ring-offset-bg group-hover:ring-primary"
               onClick={() => toggleParent(0, setShowAbout)}
-            >
-              <span
-                className={`small-dot  ${
-                  !showAbout[0] ? "bg-primary" : "group-hover:bg-linkHover"
-                }`}
-              ></span>
-            </span>
+            />
 
             <p className={`${!showAbout[0] ? "hidden" : "block"}`}>
               <span className="font-extrabold">Hey,</span> I'm a Computer
@@ -67,17 +62,14 @@ export default function About() {
 
         {/* Academic Foundation */}
         <div>
-          <div className={`relative ${!showAbout[1] ? "" : "card-style "} `}>
+          <div
+            className={`relative ${!showAbout[1] ? "" : "card-style "} group `}
+          >
             <span
-              className="big-dot max-sm:hidden -translate-x-[14px] cursor-pointer group"
+              className="shadow-dot max-sm:hidden -translate-x-[14px] cursor-pointer group-hover:shadow-[inset_0_0_4px_4px_var(--primary)] transition-shadow duration-300"
               onClick={() => toggleParent(1, setShowAbout)}
-            >
-              <span
-                className={` small-dot ${
-                  !showAbout[1] ? "bg-primary" : "group-hover:bg-cardBg"
-                }`}
-              ></span>
-            </span>
+            />
+
             {showAbout[1] ? (
               <div>
                 <motion.div
@@ -148,20 +140,15 @@ export default function About() {
 
         {/* Academic Foundation*/}
         <div
-          className={`font-medium relative ${
+          className={`font-medium relative group ${
             !showAbout[2] ? "" : "card-style "
           }`}
         >
           <span
-            className="big-dot max-sm:hidden -translate-x-[14px] cursor-pointer group"
+            className="shadow-dot max-sm:hidden -translate-x-[14px] cursor-pointer group-hover:shadow-[inset_0_0_4px_4px_var(--primary)] transition-shadow duration-300"
             onClick={() => toggleParent(2, setShowAbout)}
-          >
-            <span
-              className={`small-dot  ${
-                !showAbout[2] ? "bg-primary" : "group-hover:bg-cardBg"
-              }`}
-            />
-          </span>
+          />
+
           {showAbout[2] ? (
             <div>
               <h3 className="card-title">
@@ -210,17 +197,15 @@ export default function About() {
         </div>
 
         {/* Personal Information */}
-        <div className={`${!showAbout[3] ? "" : "card-style "}  w-full `}>
+        <div
+          className={` ${
+            !showAbout[3] ? "" : "card-style "
+          } relative font-medium w-full group `}
+        >
           <span
-            className="big-dot max-sm:hidden -translate-x-[14px] cursor-pointer group"
+            className="shadow-dot max-sm:hidden -translate-x-[14px] cursor-pointer group-hover:shadow-[inset_0_0_4px_4px_var(--primary)] transition-shadow duration-300"
             onClick={() => toggleParent(3, setShowAbout)}
-          >
-            <span
-              className={`small-dot  ${
-                !showAbout[3] ? "bg-primary" : "group-hover:bg-cardBg"
-              }`}
-            ></span>
-          </span>
+          />
 
           <div className={`${!showAbout[3] ? "hidden" : "block"}`}>
             <h3 className="card-title">
@@ -271,18 +256,14 @@ export default function About() {
             duration: 0.5,
             ease: "easeOut",
           }}
-          className={`small-body relative ${!showAbout[4] ? "h-auto" : ""}`}
+          className="text-text small-body font-medium my-1 relative main-trans group bg-white/5 p-4 backdrop-blur-xl"
         >
           <span
-            className="big-dot max-sm:hidden -translate-x-3 cursor-pointer group"
+            className="big-dot max-sm:hidden -translate-x-3.5 cursor-pointer
+            ring-2 ring-ring ring-offset-2 ring-offset-bg group-hover:ring-primary"
             onClick={() => toggleParent(4, setShowAbout)}
-          >
-            <span
-              className={`small-dot  ${
-                !showAbout[4] ? "bg-primary" : "group-hover:bg-primary"
-              }`}
-            ></span>
-          </span>
+          />
+
           {showAbout[4] ? (
             <p className="text-text font-medium leading-relaxed tracking-wide">
               <span className="font-bold">In my downtime,</span> I enjoy

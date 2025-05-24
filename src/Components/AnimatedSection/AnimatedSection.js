@@ -8,12 +8,12 @@ export const AnimatedSection = ({ children, delay = 0, className = "" }) => {
         opacity: 1,
         y: 0,
         transition: {
-          duration: 0.6,
+          duration: 0.5,
           ease: "easeOut",
           delay,
         },
       }}
-      viewport={{ once: true, margin: "0px 0px -5% 0px" }}
+      viewport={{ once: true, margin: "0px 0px -100px 0px" }}
       className={`motion-section ${className}`}
       style={{
         // CSS-based mobile optimizations

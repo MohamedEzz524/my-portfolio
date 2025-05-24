@@ -37,6 +37,7 @@ import {
   SiNpm,
   SiFigma,
   SiCanva,
+  SiApacheecharts,
 } from "react-icons/si";
 
 import zRevoLarge from "./assets/images/PortfolioTemplateV.webp";
@@ -63,6 +64,8 @@ import PropertyLarge from "./assets/images/Property_Large.webp";
 import PropertyPh from "./assets/images/Property_Small.webp";
 import RecipesLarge from "./assets/images/Recipes_Large.webp";
 import RecipesPh from "./assets/images/Recipes_Small.jpg";
+import Dashboard from "./assets/images/Dashboard.webp";
+import DashboardPh from "./assets/images/Dashboard_Ph.webp";
 
 export const aboutInfo = [
   {
@@ -195,9 +198,10 @@ export const tools = [
   { id: "t2", icon: <SiGithub />, name: "GitHub" },
   { id: "t3", icon: <SiVite />, name: "Vite" },
   { id: "t4", icon: <SiNpm />, name: "npm" },
-  { id: "t5", icon: <SiFigma />, name: "Figma" },
-  { id: "t6", icon: <SiCanva />, name: "Canva" },
-  { id: "t7", icon: <FaChrome />, name: "DevTools" },
+  { id: "t5", icon: <SiApacheecharts />, name: "Nivo" },
+  { id: "t6", icon: <SiFigma />, name: "Figma" },
+  { id: "t7", icon: <SiCanva />, name: "Canva" },
+  { id: "t8", icon: <FaChrome />, name: "DevTools" },
 ];
 
 // Projects
@@ -206,8 +210,8 @@ export const projects = [
     id: "p1",
     large: zRevoLarge,
     small: zRevoPh,
-    title: "Portfolio Reusable Template",
-    desc: "A production-ready portfolio template built with React and Tailwind. Emphasizes scalability, reusable components, and smooth user experience with Intersection Observer integration.",
+    title: "Simone Project",
+    desc: "A production-ready portfolio template built with React and Tailwind CSS. Prioritizes scalability and performance with fully modular components, responsive design, and smooth UX powered by the Intersection Observer for section-based interactions.",
     tools: [
       "React",
       "Tailwind CSS",
@@ -222,7 +226,7 @@ export const projects = [
     large: BakeoraLarge,
     small: BakeoraPh,
     title: "Bakeora Baking Shop",
-    desc: "A modern bakery website using React Router v6 with nested routing, search/hash navigation, and a dynamic blog. Built for performance, reusability, and seamless UX.",
+    desc: "A visually engaging bakery website built with React Router v6 and Tailwind CSS. Features nested routing, hash-based section navigation, and a fully integrated blog system. Optimized for speed, component reusability, and modern user experience.",
     tools: [
       "React",
       "React Router v6",
@@ -239,7 +243,7 @@ export const projects = [
     large: portfolioLarge,
     small: portfolioPh,
     title: "Portfolio V1",
-    desc: "My first personal portfolio crafted with custom CSS and React. Features animations, section observers, and fully responsive layout to highlight my work.",
+    desc: "My first personal portfolio developed using React and custom CSS. Includes animated transitions, responsive layout, and scroll-triggered effects using Intersection Observer for dynamic content reveal.",
     tools: [
       "React",
       "Custom CSS",
@@ -255,7 +259,7 @@ export const projects = [
     large: SpecialLarge,
     small: SpecialPh,
     title: "Special Design",
-    desc: "Interactive design project to apply JavaScript motion effects, theme toggling, and observer-based UX improvements.",
+    desc: "A creative front-end project showcasing interactive animations, motion effects with JavaScript, theme toggling, and observer-driven UI reactions. Focuses on polished micro-interactions and engaging user flows.",
     tools: ["HTML5", "CSS3", "JavaScript", "Observer API", "Themes"],
     link: "https://mohamedezz524.github.io/Fourth-project/",
     github: "https://github.com/MohamedEzz524/Fourth-project",
@@ -264,38 +268,38 @@ export const projects = [
     id: "p5",
     large: ZeroLarge,
     small: ZeroPh,
-    title: "ELZero Training",
-    desc: "Practice project focused on core JavaScript skills, DOM scripting, and interaction logic for dynamic content.",
+    title: "ELZero Project",
+    desc: "A hands-on JavaScript training project focused on mastering DOM manipulation and core logic implementation. Built to reinforce understanding of dynamic content rendering and user interaction patterns.",
     tools: ["HTML5", "CSS3", "JavaScript", "DOM Manipulation"],
     link: "https://mohamedezz524.github.io/Third-project/",
     github: "https://github.com/MohamedEzz524/Third-project",
   },
   {
     id: "p6",
-    large: GPTLarge,
-    small: GPTPh,
-    title: "GPT-3",
-    desc: "Landing page concept inspired by GPT-3, designed to practice semantic HTML and clean responsive layout.",
-    tools: ["HTML5", "CSS3", "Responsive Layout"],
-    link: "https://mohamedezz524.github.io/GPT-3/",
-    github: "https://github.com/MohamedEzz524/GPT-3",
-  },
-  {
-    id: "p7",
     large: DevFolioLarge,
     small: DevFolioPh,
     title: "DevFolio",
-    desc: "Bootstrap-based portfolio site to experiment with component structure, fast prototyping, and mobile-first design.",
+    desc: "A modern portfolio built with Bootstrap, emphasizing rapid prototyping, mobile-first responsiveness, and modular structure. Designed to experiment with layout hierarchy and reusable component patterns.",
     tools: ["HTML5", "Bootstrap", "Responsive Design"],
     link: "https://mohamedezz524.github.io/Fifth-project/",
     github: "https://github.com/MohamedEzz524/Fifth-project",
+  },
+  {
+    id: "p7",
+    large: GPTLarge,
+    small: GPTPh,
+    title: "GPT-3",
+    desc: "A sleek landing page concept inspired by GPT-3, designed to practice clean semantic HTML and pixel-perfect responsive layouts. Highlights structured content presentation and visual balance.",
+    tools: ["HTML5", "CSS3", "Responsive Layout"],
+    link: "https://mohamedezz524.github.io/GPT-3/",
+    github: "https://github.com/MohamedEzz524/GPT-3",
   },
   {
     id: "p8",
     large: KasperLarge,
     small: KasperPh,
     title: "Kasper",
-    desc: "UI and layout training project with advanced CSS techniques, focusing on visual hierarchy and design clarity.",
+    desc: "A layout and design-focused project built with advanced CSS3, demonstrating visual hierarchy, clean UI patterns, and consistent spacing. Aimed at refining design clarity and responsive practices.",
     tools: ["HTML5", "CSS3", "Responsive Layout"],
     link: "https://mohamedezz524.github.io/Second-project/",
     github: "https://github.com/MohamedEzz524/Second-project",
@@ -305,7 +309,7 @@ export const projects = [
     large: LeonLarge,
     small: LeonPh,
     title: "Leonagency",
-    desc: "My first website project, built with semantic HTML and basic CSS. A simple static site to practice layout and design principles.",
+    desc: "My very first web project — a static site crafted with semantic HTML and fundamental CSS. A milestone for learning foundational layout, responsive structure, and design semantics.",
     tools: ["HTML5", "CSS3", "Responsive Design"],
     link: "https://mohamedezz524.github.io/First-project/",
     github: "https://github.com/MohamedEzz524/First-project",
@@ -313,6 +317,24 @@ export const projects = [
 ];
 
 export const recentWork = [
+  {
+    id: "rec0",
+    title: "Admin Dashboard",
+    large: Dashboard,
+    small: DashboardPh,
+    desc: "Built a responsive admin panel using React, Vite, and Material UI with dynamic routing via React Router v6 Integrated Formik for forms, FullCalendar for scheduling, and Nivo for interactive data visualization. Features reusable components, theme switching, sidebar navigation, and dashboard metrics.",
+    tools: [
+      "React Router",
+      "Material Ui",
+      "Data Grid",
+      "Formik/yup",
+      "Pro-Sidebar",
+      "Calendar",
+      "Nivo Charts",
+    ],
+    link: "https://mohamedezz524.github.io/Admin_dashboard/",
+    github: "https://github.com/MohamedEzz524/Admin_dashboard",
+  },
   {
     id: "rec1",
     title: "Recipes App",
